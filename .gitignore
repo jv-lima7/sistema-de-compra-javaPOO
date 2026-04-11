@@ -1,15 +1,13 @@
-# Pasta de arquivos compilados
+#Java compiler
 bin/
 *.class
 
-# Configurações do VS Code
+#VS Code
 .vscode/
 
-# Arquivos de outras IDEs (Eclipse/IntelliJ) que estão na sua pasta
-.classpath
-.project
-.settings/
+#IntelliJ
 .idea/
 *.iml
+
 *.classpath
 *.project
