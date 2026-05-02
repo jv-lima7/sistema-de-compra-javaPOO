@@ -1,46 +1,46 @@
 package sistemacompra;
 
 import java.util.Scanner;
-import loginCad.Cadastro;
-import loginCad.Login;
-import loginCad.ServiceCad;
-import loginCad.ServiceLog;
+import services.Cadastro;
+import services.Login;
+import services.ServiceCadastro;
+import services.ServiceLogin;
 
 public class SistemaCompra {
 
 	public static void main(String[] args) {
 		Scanner sys = new Scanner(System.in);
-		Cadastro cad = new Cadastro();
-		Estoque estq = new Estoque();
-		Login lgn = new Login();
-		ServiceCad srvCad = new ServiceCad();
-		ServiceLog srvLog = new ServiceLog();
-		
+		Cadastro cadastro = new Cadastro();
+		Estoque estoque = new Estoque();
+		Login login = new Login();
+		ServiceCadastro serviceCad = new ServiceCadastro();
+		ServiceLogin serviceLogin = new ServiceLogin();
+
 		System.out.println("Olá, bem vindo ao sistema de compras online!");
 		System.out.println("\n1 - Cadastrar-se agora");
-		System.out.println("2 - Sair");
-		System.out.print("\nSelecione uma opção: ");
+		System.out.println("2 - Encerrar programa");
+		System.out.print("\nEscolha uma opção: ");
 		int op = sys.nextInt();
 		sys.nextLine();
-		
+
 		while(op!=1 && op!=2) {
 			System.out.println("Opção inválida! Tente novamente");
 			System.out.println("\n1 - Cadastrar-se agora");
-			System.out.println("2 - Sair");
-			System.out.print("\nSelecione uma opção: ");
+			System.out.println("2 - Encerrar programa");
+			System.out.print("\nEscolha uma opção: ");
 			op = sys.nextInt();
 			sys.nextLine();
 		}
 		if(op==1) {
-			op = srvCad.realizarCadastro(cad, sys);
+			op = serviceCad.realizarCadastro(cadastro, sys);
 			if(op==1) {
-				srvLog.realizarLogin(cad, lgn, sys);
-				estq.exibirEstoque();
-			} else if(op==2) {
+				serviceLogin.realizarLogin(cadastro, login, sys);
+				estoque.exibirEstoque();
+			} else {
 				System.out.println("\nEncerrando programa...");
 				System.out.println("Programa encerrado.");
-			}	
-		} else if(op==2) {
+			}
+		} else {
 			System.out.println("\nEncerrando programa...");
 			System.out.println("Programa encerrado.");
 		}

@@ -1,0 +1,9 @@
+INDEX VERSION 1.132+F:\ProjetosJava\SistemaCompra - final\.metadata\.plugins\org.eclipse.jdt.core
+3562820738.index
+1989743393.index
+501783803.index
+1224697689.index
+2661712964.index
+2381718214.index
+1442469857.index
+1865797976.index

@@ -1,13 +1,28 @@
-#Java compiler
+# Java compiler
 bin/
 *.class
+*.jar
+*.war
+*.ear
 
-#VS Code
+# VS Code
 .vscode/
 
-#IntelliJ
+# IntelliJ IDEA
 .idea/
 *.iml
+out/
 
+# Build
+target/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Classpath / Project files
 *.classpath
 *.project

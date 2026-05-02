@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Estoque {
-    private List<String> produtos = new ArrayList<>();
+    private final List<String> produtos = new ArrayList<>();
 
     public Estoque() {
         produtos.add("-iPhone 13");
@@ -25,7 +25,7 @@ public class Estoque {
             System.out.println("\n----------PRODUTOS DISPONÍVEIS----------");
             System.out.println();
 		    for (String p : produtos) {
-		        System.out.println(p);	
+		        System.out.println(p);
 		    }
         }			
 	}
