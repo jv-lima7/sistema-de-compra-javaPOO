@@ -1,10 +1,9 @@
 package sistemacompra;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Estoque {
-    private final List<String> produtos = new ArrayList<>();
+    private ArrayList<String> produtos = new ArrayList<>();
 
     public Estoque() {
         produtos.add("-iPhone 13");
